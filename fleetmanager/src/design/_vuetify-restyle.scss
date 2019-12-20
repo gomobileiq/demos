@@ -1,0 +1,39 @@
+.v-list {
+  $cascade: "html.g-app .theme--light";
+
+  #{$cascade} &__tile__mask {
+    color: #000;
+    background-color: transparent;
+  }
+}
+
+.v-select {
+  &__slot {
+    overflow: hidden;
+  }
+
+  &__selection {
+    &--comma {
+      white-space: nowrap;
+    }
+  }
+}
+
+.v-text-field {
+  .v-label {
+    &.theme--light {
+      top: 5px;
+    }
+
+    &.v-label {
+      &--active {
+        transform: translateY(-20px) scale(0.75);
+      }
+    }
+  }
+}
+
+.v-tooltip__content {
+  // stylelint-disable-next-line declaration-no-important
+  z-index: 55 !important;
+}

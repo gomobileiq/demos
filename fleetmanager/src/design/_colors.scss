@@ -1,0 +1,14 @@
+@import "./variables";
+
+$colors: (
+  "text--grey": $charcoal-grey-56,
+  "text--error": $light-burgundy,
+  "text--red": $light-burgundy,
+  "text--green": $green,
+);
+
+@each $class, $color in $colors {
+  .#{$class} {
+    color: $color;
+  }
+}

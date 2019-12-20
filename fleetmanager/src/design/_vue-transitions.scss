@@ -1,0 +1,44 @@
+/* Because these styles must always have the highest priority */
+/* stylelint-disable declaration-no-important  */
+.g-slide-down-enter-active,
+.g-slide-down-leave-active {
+  transition: max-height 0.2s !important;
+}
+
+.g-slide-down-enter,
+.g-slide-down-leave-to {
+  max-height: 0 !important;
+}
+
+.g-slide-enter-active,
+.g-slide-leave-active {
+  transition: all 0.2s !important;
+  transition-property: max-width, max-height;
+}
+
+.g-slide-enter,
+.g-slide-leave-to {
+  max-width: 0 !important;
+  max-height: 0 !important;
+}
+
+.g-slide-fade-up-enter-active,
+.g-slide-fade-up-leave-active {
+  transition: all 0.2s ease;
+}
+
+.g-slide-fade-up-enter,
+.g-slide-fade-up-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.g-fade-enter-active,
+.g-fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.g-fade-enter,
+.g-fade-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,137 @@
+@import "./variables";
+
+@mixin grid($viewport) {
+  .g-flex {
+    &.start-#{$viewport} {
+      justify-content: flex-start;
+      text-align: start;
+    }
+
+    &.center-#{$viewport} {
+      justify-content: center;
+      text-align: center;
+    }
+
+    &.end-#{$viewport} {
+      justify-content: flex-end;
+      text-align: end;
+    }
+
+    &.top-#{$viewport} {
+      align-items: flex-start;
+    }
+
+    &.middle-#{$viewport} {
+      align-items: center;
+    }
+
+    &.bottom-#{$viewport} {
+      align-items: flex-end;
+    }
+
+    &.around-#{$viewport} {
+      justify-content: space-around;
+    }
+
+    &.between-#{$viewport} {
+      justify-content: space-between;
+    }
+
+    &.nowrap-#{$viewport} {
+      flex-wrap: nowrap;
+    }
+
+    .col.first-#{$viewport} {
+      order: -1;
+    }
+
+    .col.last-#{$viewport} {
+      order: 1;
+    }
+
+    .col-#{$viewport} {
+      flex-grow: 1;
+      flex-basis: 0;
+      max-width: 100%;
+    }
+
+    .col-#{$viewport}-none {
+      flex: none;
+    }
+
+    @for $i from 1 through $grid-columns {
+      .col-#{$viewport}-#{$i} {
+        flex-basis: ((100% / $grid-columns) * $i);
+        max-width: ((100% / $grid-columns) * $i);
+      }
+    }
+
+    @for $i from 1 through $grid-columns {
+      .col-#{$viewport}-offset-#{$i} {
+        margin-left: ((100% / $grid-columns) * $i);
+      }
+    }
+  }
+}
+
+.g-container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  @media (min-width: $media-lg-min) {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  &--hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.g-flex {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+
+  &.row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  > .col {
+    flex: 0 0 auto;
+    padding: 0 8px;
+  }
+}
+
+@include grid("xs");
+
+@media (min-width: $media-sm-min) {
+  @include grid("sm");
+}
+
+@media (min-width: $media-md-min) {
+  @include grid("md");
+}
+
+@media (min-width: $media-lg-min) {
+  @include grid("lg");
+}
+
+@media (min-width: $media-xl-min) {
+  @include grid("xl");
+}

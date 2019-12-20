@@ -1,0 +1,73 @@
+
+// Text
+$green-text: #4caf50;
+$dark-gray-text: #555;
+
+// Background
+$blue-bg: #2196f3;
+
+/**
+ * Redesign
+ */
+// Colors
+$soft-yellow: #ffeca9;
+$fiery: #F8931D;
+$yellow: #fde399;
+$dark-indigo: #071a33;
+$azure: #008bff;
+$blue: #7dc2fc;
+$blue-link:  #0170cc;
+$marigold: #fb0;
+$green: #37ad1c;
+$light-burgundy: #c32e52;
+$blue-grey: #c5c7cc;
+$dark-grey: #757575;
+$dark-grey-icon: #6d7d80;
+$light-blue-grey: #c3c9cd;
+$boring-green: #5cb85c;
+$light-green: #9bd68d;
+$true-green: #009500;
+$slime-green: #88d105;
+$light-khaki: #e6f99d;
+$charcoal-grey: #323c47;
+$charcoal-grey-56: rgba($charcoal-grey, 0.56);
+$light-blue-grey: #c3c9cd;
+$pale-blue: #e4ecf2;
+$black-16: #c4c1b9;
+$light-blue: #03a9f4;
+$red-error: #b71c1c;
+$slime-grey: #f2f2f2;
+$boring-grey: #f9f9f9;
+
+// Typography
+$font-default: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+$font-main: "Roboto", $font-default;
+
+// Paths
+$path-img: "/images/";
+$path-icons: $path-img + "icons/";
+$path-fonts: "/fonts/";
+
+// Media
+$media-sm-min: 768px; // (min-width: 768px)
+$media-md-min: 1024px; // (min-width: 1024px)
+$media-lg-min: 1256px; // (min-width: 1256px)
+$media-xl-min: 1456px; // (min-width: 1456px)
+
+// New media
+$desktop: 1256px;
+$largeDesktop: 1456px;
+
+// Other
+$grid-gutter: 8px;
+$grid-columns: 12;
+$default-input-height: 32px;
+
+/* stylelint-disable */
+:export {
+  mariGold: $marigold;
+  blueGrey: $blue-grey;
+  azure: $azure;
+  green: $green;
+  lightBurgundy: $light-burgundy;
+}
