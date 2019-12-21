@@ -1,5 +1,5 @@
 <?php
-    require "../configs/config.php";
+    require "config.php";
     
     try {
         $connection = new PDO($dsn, $username, $password, $options);
@@ -30,7 +30,7 @@
         $statement->bindValue(':isComplete', $isComplete);
         $statement->execute();
 
-        header ("location: /index.php");
+        header ("location: /demo/todolist/index.php");
         
 
     } catch(PDOException $error) {

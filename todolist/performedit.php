@@ -1,5 +1,5 @@
 <?php
-    require "../configs/config.php";
+    require "config.php";
     require "./common.php";
 
     try {
@@ -31,7 +31,7 @@
         $statement = $connection->prepare($sql);
         $statement->execute($task);
 
-        header ("location: /index.php");
+        header ("location: /demo/todolist/index.php");
     }
 
     

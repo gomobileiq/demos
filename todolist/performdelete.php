@@ -1,5 +1,5 @@
 <?php
-require "../configs/config.php";
+require "config.php";
 require "./common.php";
 ?>
 <?php
@@ -15,7 +15,7 @@ require "./common.php";
             $statement->bindValue(':id', $id);
             $statement->execute();
 
-            header ("location: /index.php");
+            header ("location: /demo/todolist/index.php");
       
         } catch(PDOException $error) {
           echo $sql . "<br>" . $error->getMessage();

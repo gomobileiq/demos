@@ -43,14 +43,14 @@
                           <ul class="nav justify-content-end nav-pills card-header-pills">
                               <?php if ($task["isComplete"] == 'false') { ?>
                                   <li class="nav-item">
-                                      <a class="nav-link" href="/edittask.php?id=<?php echo $task["id"] ?>"> <i class="fas fa-edit"></i></a>
+                                      <a class="nav-link" href="./edittask.php?id=<?php echo $task["id"] ?>"> <i class="fas fa-edit"></i></a>
                                   </li>
                               <?php } ?>
                               <li class="nav-item">
-                                  <a class="nav-link" href="/deletetask.php?id=<?php echo $task["id"] ?>"> <i class="fas fa-trash-alt"></i></a>
+                                  <a class="nav-link" href="./deletetask.php?id=<?php echo $task["id"] ?>"> <i class="fas fa-trash-alt"></i></a>
                               </li>
                               <li class="nav-item">
-                                  <form method="post" action="/completetask.php?id=<?php echo $task["id"] ?>">
+                                  <form method="post" action="./completetask.php?id=<?php echo $task["id"] ?>">
                                       <button type="submit" class="btn btn-link">
                                           <?php if ($task["isComplete"] == 'false') { ?>
                                               <i class="fas fa-check"></i>
