@@ -2,10 +2,10 @@
 
     $links = array(
 
-        array('description' => 'bar', 'url' => './bar/index.html'),
-        array('description' => 'fleetmanager', 'url' => './fleetmanager/index.php'),
-        array('description' => 'laravel', 'url' => './laravel/public/index.php'),
-        array('description' => 'todolist', 'url' => './todolist/index.php'),
+        array('description' => 'bar', 'url' => './bar/'),
+        array('description' => 'fleetmanager', 'url' => './fleetmanager/dist/'),
+        array('description' => 'laravel', 'url' => './laravel/public/'),
+        array('description' => 'todolist', 'url' => './todolist/'),
 
     );
 ?>

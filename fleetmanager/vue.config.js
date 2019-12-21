@@ -15,7 +15,7 @@ module.exports = {
     // Enable CSS source maps.
     sourceMap: true,
   },
-  publicPath: '',
+  publicPath: '/demo/fleetmanager/dist/',
   devServer: {
     // open: true,
     // eslint-disable-next-line global-require
