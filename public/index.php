@@ -3,8 +3,6 @@
     $links = array(
 
         array('description' => 'bar', 'url' => './bar/'),
-        array('description' => 'fleetmanager', 'url' => './fleetmanager/dist/'),
-        array('description' => 'laravel', 'url' => './laravel/public/'),
         array('description' => 'phpinfo', 'url' => './phpinfo/'),
         array('description' => 'todolist', 'url' => './todolist/'),
 
