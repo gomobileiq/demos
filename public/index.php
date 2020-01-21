@@ -5,6 +5,7 @@
         array('description' => 'bar', 'url' => './bar/'),
         array('description' => 'phpinfo', 'url' => './phpinfo/'),
         array('description' => 'todolist', 'url' => './todolist/'),
+        array('description' => 'work in progress', 'url' => './workinprogress/'),
 
     );
 ?>
