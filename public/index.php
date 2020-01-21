@@ -5,7 +5,9 @@
         array('description' => 'bar', 'url' => './bar/'),
         array('description' => 'phpinfo', 'url' => './phpinfo/'),
         array('description' => 'todolist', 'url' => './todolist/'),
-        array('description' => '[CLOSED] work in progress', 'url' => './workinprogress/'),
+        array('description' => 'glue wallpaper', 'url' => './workinprogress/'),
+        array('description' => 'renovate bedroom', 'url' => './workinprogress/'),
+        array('description' => 'install outdoor bike racks', 'url' => './workinprogress/'),
 
     );
 ?>
