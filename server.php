@@ -1,5 +1,5 @@
 <?php
 
-    print var_dump($_SERVER);
+print '<pre>' . var_dump($_SERVER) . '</pre>';
 
 ?>
