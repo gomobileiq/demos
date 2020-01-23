@@ -2,12 +2,9 @@
 
     $links = array(
 
-        array('description' => 'bar', 'url' => './bar/'),
-        array('description' => 'phpinfo', 'url' => './phpinfo/'),
-        array('description' => 'todolist', 'url' => './todolist/'),
-        array('description' => 'glue wallpaper', 'url' => './workinprogress/'),
-        array('description' => 'renovate bedroom', 'url' => './workinprogress/'),
-        array('description' => 'install outdoor bike racks', 'url' => './workinprogress/'),
+        array('description' => '$_SERVER[]', 'url' => 'server.php'),
+        array('description' => 'phpinfo', 'url' => 'phpinfo.php'),
+        array('description' => 'todolist', 'url' => './todolist/ '),
 
     );
 ?>
