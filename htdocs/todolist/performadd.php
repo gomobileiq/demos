@@ -25,7 +25,7 @@
         $statement = $connection->prepare($sql);
         $statement->execute($new_task);
         
-        header ("location: /demo/todolist/index.php");
+        header ("location: /demos/todolist/index.php");
         }
     
         catch(PDOException $error) {

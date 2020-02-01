@@ -15,7 +15,7 @@ require "./common.php";
             $statement->bindValue(':id', $id);
             $statement->execute();
 
-            header ("location: /demo/todolist/index.php");
+            header ("location: /demos/todolist/index.php");
       
         } catch(PDOException $error) {
           echo $sql . "<br>" . $error->getMessage();

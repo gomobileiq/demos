@@ -30,7 +30,7 @@
         $statement->bindValue(':isComplete', $isComplete);
         $statement->execute();
 
-        header ("location: /demo/todolist/index.php");
+        header ("location: /demos/todolist/index.php");
         
 
     } catch(PDOException $error) {

@@ -31,7 +31,7 @@
         $statement = $connection->prepare($sql);
         $statement->execute($task);
 
-        header ("location: /demo/todolist/index.php");
+        header ("location: /demos/todolist/index.php");
     }
 
     
