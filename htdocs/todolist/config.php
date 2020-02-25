@@ -1,7 +1,16 @@
 <?php
+
+  $host       = "localhost";
+  $username   = "root";
+  $password   = "Lv9fa35HXCqeDzu";
+  $dsn        = "mysql:host=$host;dbname=tasks";
+  $options    = array(
+                  PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+                );
+
   $host       = "localhost";
   $username   = "headlight";
-  $password   = "headlight";
+  $password   = "PfpSSL5m9MUyWTzc";
   $dsn        = "mysql:host=$host;dbname=tasks";
   $options    = array(
                   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
