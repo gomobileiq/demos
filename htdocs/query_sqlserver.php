@@ -1,17 +1,19 @@
 <?php
 
-    $serverName = "localhost";
+    $server = getenv('SQL_SERVER');
+
     $connectionOptions = array(
 
         "Database"  => "Northwind",
-        "Uid"       => "headlight",
-        "PWD"       => "PfpSSL5m9MUyWTzc"
+        "Uid"       => getenv('SQL_USERNAME'),
+        "PWD"       => getenv('SQL_PASSWORD')
     );
 
     //Establishes the connection
     try {
 
-        $conn = sqlsrv_connect($serverName, $connectionOptions);
+        // $conn = sqlsrv_connect($server, $connectionOptions);
+        $conn = sqlsrv_connect(getenv('SQL_SERVER'), $connectionOptions);
         if ($conn) {
 
             echo "Connected!";

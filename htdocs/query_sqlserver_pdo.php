@@ -1,11 +1,10 @@
 <?php
 
-    $server = "localhost";
-    $database = "Northwind";
-    $dsn = "sqlsrv:server=$server;Database=$database";
+    $server = getenv('SQL_SERVER');
+    $username = getenv('SQL_USERNAME');
+    $password = getenv('SQL_PASSWORD');
 
-    $username = "headlight";
-    $password = "PfpSSL5m9MUyWTzc";
+    $dsn = "sqlsrv:server=$server;Database=Northwind";
     $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
 	try {	
