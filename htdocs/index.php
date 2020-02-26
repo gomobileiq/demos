@@ -2,11 +2,11 @@
 
     $links = array(
 
-        array('description' => 'var_dump($_SERVER[])', 'url' => 'server.php'),
-        array('description' => 'print phpinfo()', 'url' => 'phpinfo.php'),
+        array('description' => 'phpinfo()', 'url' => 'phpinfo.php'),
         array('description' => 'SQL Server Query using PDO', 'url' => 'query_sqlserver_pdo.php'),
-        array('description' => 'SQL Server Query using sqlsrv_connect()', 'url' => 'query_sqlserver.php'),
+        array('description' => 'SQL Server Query using sqlsrv_connect()', 'url' => './query_sqlsrv_connect.php'),
         array('description' => 'Todo List using MySQL', 'url' => './todolist/ '),
+        array('description' => 'var_dump($_SERVER[])', 'url' => 'server.php'),
 
     );
 ?>
