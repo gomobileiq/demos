@@ -1,21 +1,19 @@
 <?php
 
-    $server = getenv('SQL_SERVER');
+    $server = 'applications.gomobileiq.com';
     $username = getenv('SQL_USERNAME');
     $password = getenv('SQL_PASSWORD');
 
-    $dsn = "sqlsrv:server=$server;Database=Northwind";
+    $dsn = "sqlsrv:server=$server;Database=SE100001";
     $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
 	try {	
 
         $pdo = new PDO($dsn, $username, $password, $options);
 
-		$sql = "SELECT TOP 5 * FROM customers";
-		$statement = $pdo->prepare($sql);
-		$statement->execute();
+        $sql = "SELECT TOP 5 * FROM geocode_cache";
+        $result = $pdo->query($sql)->fetchAll();
 
-        $result = $statement->fetchAll();
         print print_r($result, true);
 
 	} catch(PDOException $error) {

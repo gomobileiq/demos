@@ -1,14 +1,7 @@
 <?php 
+    
+    header('Location: ./todolist/');
 
-    $links = array(
-
-        array('description' => 'phpinfo()', 'url' => 'phpinfo.php'),
-        array('description' => 'SQL Server Query using PDO', 'url' => 'query_sqlserver_pdo.php'),
-        array('description' => 'SQL Server Query using sqlsrv_connect()', 'url' => './query_sqlsrv_connect.php'),
-        array('description' => 'Todo List using MySQL', 'url' => './todolist/ '),
-        array('description' => 'var_dump($_SERVER[])', 'url' => 'server.php'),
-
-    );
 ?>
 
 <!DOCTYPE html>
@@ -24,15 +17,7 @@
 </style>
 </head>
 <body>
-<h1>Welcome to the MobileIQ Demo Grounds!</h1>
-<?php 
-
-    foreach ($links as $link) {
-
-        print sprintf('<a href="%s">%s</a></br>', $link['url'], $link['description']);
-    }
-
-?>
+    <h1>Welcome to the MobileIQ Demo Grounds!</h1>
 </body>
 </html>
 
